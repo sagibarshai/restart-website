@@ -13,8 +13,8 @@ const WhatWeClean = () => {
           <IconText icon={<IconBed size={48} />} title="מזרונים" />
           <IconText icon={<IconCarpet size={48} />} title="שטיחים" />
           <IconText icon={<IconSofa size={48} />} title="ספות" /> */}
-          <IconText icon={<img src="./images/car.jpg" width={"100%"} />} title="נקיון לפני מכירה" />
-          <IconText icon={<img src="./images/upholstery.jpg" width={"100%"} />} title="ריפודים" />
+          <IconText icon={<img src="./images/car.jpg" width={"100%"} />} title="נקיון ריפודי רכב לפני מכירה" />
+          <IconText icon={<img src="./images/upholstery.jpg" width={"100%"} />} title=" ריפודים" />
           <IconText icon={<img src="./images/bed.jpeg" width={"100%"} />} title="מזרונים" />
           <IconText icon={<img src="./images/carpet.jpg" width={"100%"} />} title="שטיחים" />
           <IconText icon={<img src="./images/sofa.jpg" width={"100%"} />} title="ספות" />

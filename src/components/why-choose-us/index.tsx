@@ -13,41 +13,38 @@ const WhyChooseUs = () => {
     <StyledWhyChooseUsWrapper>
       <StyledWhyChooseUsContentWrapper>
         <StyledWhyChooseUsTitle>למה לבחור בנו?</StyledWhyChooseUsTitle>
-        <StyledWhyChooseUsText>
+        {/* <StyledWhyChooseUsText>
           לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט לורם איפסום דולור סיט אמט,
           קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט{" "}
-        </StyledWhyChooseUsText>
+        </StyledWhyChooseUsText> */}
         <StyledInfoCardsWrapper>
-          <InfoCard
+          {/* <InfoCard
             icon={<IconSaveMoney size={48} />}
             title="שירות זול"
             content="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט "
-          />
+          /> */}
           <InfoCard
             icon={<IconClean size={48} />}
-            title="הציוד המתקדם בעולם"
-            content="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט "
+            title="ציוד וחומרים מתקדמים"
+            content="
+             אנו משתמשים בציוד ובחומרים הטובים והחדישים  ביותר"
           />
-          <InfoCard
-            icon={<IconClock size={48} />}
-            title="שירות 24/7 "
-            content="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט "
-          />
+          <InfoCard icon={<IconClock size={48} />} title="שירות בזמינות גבוהה " content="לוח הזמנים שלנו הוא גמיש ונגיש למען הלקוח" />
           <InfoCard
             icon={<IconHandShake size={48} />}
-            title="100% ניקוי וחיטוי"
-            content="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט "
+            title="חיטוי וניקוי מעמיק"
+            content="בעזרת הציוד והחומרים המתקדמים שלנו אנו מגיעים למקסימום חיטוי וניקוי האפשרי"
           />
-          <InfoCard
+          {/* <InfoCard
             icon={<IconFast size={48} />}
             title="הגעה מהירה"
             content="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט "
-          />
-          <InfoCard
+          /> */}
+          {/* <InfoCard
             icon={<IconOk size={48} />}
             title="אחריות על העבודה"
             content="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט "
-          />
+          /> */}
         </StyledInfoCardsWrapper>
       </StyledWhyChooseUsContentWrapper>
     </StyledWhyChooseUsWrapper>

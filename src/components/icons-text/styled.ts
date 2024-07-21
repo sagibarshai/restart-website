@@ -18,7 +18,6 @@ export const StyledIcon = styled.img`
 export const StyledText = styled.span`
   font-size: ${({ theme }) => theme.fonts.sizes.subtitle};
   font-weight: bolder;
-  text-decoration: underline;
   @media screen and (${({ theme }) => theme.breakPoints.small}) {
     font-size: ${({ theme }) => theme.fonts.sizes.subtitleMobile};
   }

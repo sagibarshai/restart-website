@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const StyledCarouselWrapper = styled.div`
   width: 100%;
@@ -40,11 +40,23 @@ export const StyledCarouselArrowsWrapper = styled.div`
   }
 `;
 
+const fadeIn = keyframes`
+0%{
+  opacity: 0;
+  transform: translateX(-30%);
+}
+100%{
+  opacity: 1;
+  transform: translateX(0);
+}
+`;
+
 export const StyledTextWrapper = styled.p`
   font-size: ${({ theme }) => theme.fonts.sizes.text};
   max-width: 68%;
   word-wrap: break-word;
   overflow-y: auto;
+  animation: ${fadeIn} 1s ease-in;
   @media screen and (${({ theme }) => theme.breakPoints.small}) {
     font-size: ${({ theme }) => theme.fonts.sizes.textMobile};
   }

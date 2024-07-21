@@ -35,6 +35,7 @@ export const StyledContactUsPersonalPhone = styled.a`
   display: flex;
   gap: ${({ theme }) => theme.spaces.s};
   align-items: center;
+  cursor: pointer;
 `;
 
 export const StyledContactUsRow = styled.div`

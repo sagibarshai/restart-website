@@ -9,10 +9,10 @@ import {
   StyledTextQuotesWrapper,
   StyledTextWrapper,
 } from "./styled";
-import { Props } from "./types";
 import { ArrowType } from "../arrows/types";
 
-const Carousel = ({ title }: Props) => {
+const Carousel = () => {
+  const title = "לקוחות מספרים:";
   const elements = [
     `
       ט מיחוצים. קלאצי לורם איפסום דולור סי מנכם
@@ -41,8 +41,6 @@ const Carousel = ({ title }: Props) => {
   const onSlide = (type: ArrowType) =>
     type === "next" ? setCurrentElementIndex((state) => state + 1) : setCurrentElementIndex((state) => state - 1);
 
-  console.log("currentElementIndex ", currentElementIndex);
-
   return (
     <StyledCarouselWrapper>
       <StyledCarouselContentWrapper>
@@ -51,7 +49,7 @@ const Carousel = ({ title }: Props) => {
           <ArrowButton disabled={Boolean(!elements[currentElementIndex + 1])} onClick={onSlide} type="next" />
           <StyledTextQuotesWrapper>
             <StyledQuotes location={"top"}>"</StyledQuotes>
-            <StyledTextWrapper>{elements[currentElementIndex]}</StyledTextWrapper>
+            <StyledTextWrapper key={currentElementIndex}>{elements[currentElementIndex]}</StyledTextWrapper>
             <StyledQuotes location={"bottom"}>"</StyledQuotes>
           </StyledTextQuotesWrapper>
           <ArrowButton disabled={Boolean(!elements[currentElementIndex - 1])} onClick={onSlide} type="previous" />

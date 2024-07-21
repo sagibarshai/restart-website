@@ -8,6 +8,7 @@ export const StyledInfoCardWrapper = styled.div`
   padding: ${({ theme }) => theme.spaces.xl};
   align-items: center;
   border-radius: 12px;
+  box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.4);
 `;
 
 export const StyledInfoCardIcon = styled.img`
@@ -21,7 +22,6 @@ export const StyledInfoCardTitle = styled.h4`
   @media screen and (${({ theme }) => theme.breakPoints.small}) {
     font-size: ${({ theme }) => theme.fonts.sizes.subtitleMobile};
   }
-  text-decoration: underline;
 `;
 export const StyledInfoCardContent = styled.p`
   padding: 0;

@@ -1,4 +1,4 @@
-import { IconClock, IconFast, IconHandShake, IconOk } from "../../icons";
+import { IconClean, IconClock, IconFast, IconHandShake, IconOk, IconSaveMoney } from "../../icons";
 import InfoCard from "../info-card";
 import {
   StyledInfoCardsWrapper,
@@ -18,6 +18,16 @@ const WhyChooseUs = () => {
           קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט{" "}
         </StyledWhyChooseUsText>
         <StyledInfoCardsWrapper>
+          <InfoCard
+            icon={<IconSaveMoney size={48} />}
+            title="שירות זול"
+            content="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט "
+          />
+          <InfoCard
+            icon={<IconClean size={48} />}
+            title="הציוד המתקדם בעולם"
+            content="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט "
+          />
           <InfoCard
             icon={<IconClock size={48} />}
             title="שירות 24/7 "

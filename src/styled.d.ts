@@ -24,9 +24,15 @@ declare module "styled-components" {
     fonts: {
       sizes: {
         title: string;
+        titleMobile: string;
         subtitle: string;
+        subtitleMobile: string;
         text: string;
+        textMobile: string;
       };
+    };
+    breakPoints: {
+      small: string;
     };
   }
 }

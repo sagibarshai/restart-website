@@ -7,6 +7,9 @@ export const StyledContactUsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${({ theme }) => theme.palette.colors.backgrounds.aquaDark};
+  @media screen and (${({ theme }) => theme.breakPoints.small}) {
+    padding: ${({ theme }) => theme.spaces.l} 0;
+  }
 `;
 
 export const StyledContactUsContentWrapper = styled.div`
@@ -21,11 +24,17 @@ export const StyleContactUsTitle = styled.h4`
   margin: 0;
   padding: 0;
   font-size: ${({ theme }) => theme.fonts.sizes.title};
+  @media screen and (${({ theme }) => theme.breakPoints.small}) {
+    font-size: ${({ theme }) => theme.fonts.sizes.titleMobile};
+  }
 `;
 
 export const StyledContactUsPersonalPhone = styled.a`
   all: unset;
   font-weight: 300;
+  display: flex;
+  gap: ${({ theme }) => theme.spaces.s};
+  align-items: center;
 `;
 
 export const StyledContactUsRow = styled.div`
@@ -33,4 +42,15 @@ export const StyledContactUsRow = styled.div`
   justify-content: center;
   align-items: center;
   gap: ${({ theme }) => theme.spaces.xl};
+  @media screen and (${({ theme }) => theme.breakPoints.small}) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: ${({ theme }) => theme.spaces.m};
+  }
+`;
+
+export const StyledContactUsText = styled.span`
+  @media screen and (${({ theme }) => theme.breakPoints.small}) {
+    font-size: ${({ theme }) => theme.fonts.sizes.textMobile};
+  }
 `;

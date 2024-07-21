@@ -18,10 +18,16 @@ export const StyledInfoCardTitle = styled.h4`
   margin: 0;
   font-weight: bold;
   font-size: ${({ theme }) => theme.fonts.sizes.subtitle};
+  @media screen and (${({ theme }) => theme.breakPoints.small}) {
+    font-size: ${({ theme }) => theme.fonts.sizes.subtitleMobile};
+  }
   text-decoration: underline;
 `;
 export const StyledInfoCardContent = styled.p`
   padding: 0;
   margin: 0;
   font-size: ${({ theme }) => theme.fonts.sizes.text};
+  @media screen and (${({ theme }) => theme.breakPoints.small}) {
+    font-size: ${({ theme }) => theme.fonts.sizes.textMobile};
+  }
 `;

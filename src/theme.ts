@@ -23,8 +23,14 @@ export const theme: DefaultTheme = {
   fonts: {
     sizes: {
       title: "50px",
+      titleMobile: "32px",
       subtitle: "24px",
+      subtitleMobile: "18px",
       text: "16px",
+      textMobile: "12px",
     },
+  },
+  breakPoints: {
+    small: "max-width: 700px",
   },
 };

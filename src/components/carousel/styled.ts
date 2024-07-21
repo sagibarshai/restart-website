@@ -5,10 +5,13 @@ export const StyledCarouselWrapper = styled.div`
   display: flex;
   justify-content: center;
   padding: ${({ theme }) => theme.spaces.l};
+  @media screen and (${({ theme }) => theme.breakPoints.small}) {
+    padding: ${({ theme }) => theme.spaces.l} 0;
+  }
 `;
 
 export const StyledCarouselContentWrapper = styled.div`
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,14 +23,21 @@ export const StyledCarouselTitle = styled.h3`
   padding: 0;
   margin: 0;
   font-size: ${({ theme }) => theme.fonts.sizes.title};
+  @media screen and (${({ theme }) => theme.breakPoints.small}) {
+    font-size: ${({ theme }) => theme.fonts.sizes.titleMobile};
+  }
 `;
 
 export const StyledCarouselArrowsWrapper = styled.div`
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: start;
   gap: ${({ theme }) => theme.spaces.xl};
+  @media screen and (${({ theme }) => theme.breakPoints.small}) {
+    gap: ${({ theme }) => theme.spaces.xs};
+    width: 100%;
+  }
 `;
 
 export const StyledTextWrapper = styled.p`
@@ -35,7 +45,9 @@ export const StyledTextWrapper = styled.p`
   max-width: 68%;
   word-wrap: break-word;
   overflow-y: auto;
-  /* height: 150px; */
+  @media screen and (${({ theme }) => theme.breakPoints.small}) {
+    font-size: ${({ theme }) => theme.fonts.sizes.textMobile};
+  }
 `;
 
 export const StyledTextQuotesWrapper = styled.div`

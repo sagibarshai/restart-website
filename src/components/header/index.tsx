@@ -4,6 +4,7 @@ const Header = () => {
   return (
     <StyledHeaderWrapper>
       <StyledHeaderContentWrapper>
+        <img height={100} src="./images/logo.png" />
         <StyledHeaderTitle>ניקוי ספות וריפודים מקצועי</StyledHeaderTitle>
         <StyledHeaderSubtitle>ניקוי ספות עושים עם רמי מתחייב ל-100% ניקיון והסרת כתמים קשים עם הציוד המתקדם בעולם.</StyledHeaderSubtitle>
         <StyledHeaderImg src="./images/main.png" />
